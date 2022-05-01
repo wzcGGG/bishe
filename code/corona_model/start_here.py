@@ -20,18 +20,6 @@ def main():
     modelConfig = main_config.modelConfig
 
 
-    R0_controls = {
-        "World" : [
-            ("DynamicCapacity", False),
-            ],
-        "Infection" : [
-            ("baseP" , 1.25),
-            ("SeedNumber", 100),
-        ],
-        "HybridClass":[
-            ("ChangedSeedNumber", 10),
-        ],
-    }
     # this overrides the previous experiments, since base_p is being chnaged
     R0_controls = {
         "World" : [
@@ -129,9 +117,9 @@ def main():
                         else:
                             configCopy[categoryKey][specificKey] = specificValue
 
-                R0Count, multiCounts = 100, 100
+                R0Count, multiCounts = 2,2
                 if index in [0, 1] and False:
-                    R0Count = 200
+                    R0Count = 1
                 #print(configCopy1
                 if index > -1:
                     #model_framework.simpleCheck(configCopy, days=10, visuals=True, debug=True, modelName=modelName)

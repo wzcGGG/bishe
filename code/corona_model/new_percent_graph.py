@@ -67,7 +67,7 @@ def openCsv(filePath, default = ["new df here"]):
         - default: default value to load if the file is not located
     """
     try:
-        content = pd.read_csv(filePath, error_bad_lines=False)
+        content = pd.read_csv(filePath, on_bad_lines='skip')
     except Exception:
         print(f"exception, the filename {filePath} you requested to open was not found.")
         if (int(input("do you want to make a new file? 1 for yes, 0 for no")) == 1):

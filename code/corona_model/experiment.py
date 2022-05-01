@@ -545,7 +545,7 @@ medium_student_vary_policy = {
                 ("RemoteStudentCount", 500),
                 ("RemoteFacultyCount", 300),
                 ("RemovedDoubleCount", 525), #525 = total number of double
-                ("OffCampusCount", 500),
+                ("OffCampusCount", 500), # 500+300+500 = D1300
                 ("TurnOffLargeGathering", True),
                 ("ChangedSeedNumber", 5),
             ]

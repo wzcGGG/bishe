@@ -1,0 +1,4 @@
+Agent_type,totalCount,state,archetype,initial_location
+onCampus,4500,susceptible,student,dorm
+offCampus,1500,susceptible,student,offCampus
+faculty,1000,susceptible,prof,offCampus
