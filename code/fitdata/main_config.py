@@ -30,7 +30,7 @@ modelConfig = {
             "baseP" : 1.25,  # summer was 1.25
             "SeedNumber" : 15,
             "offCampusInfectionMultiplyer":  1,
-            "offCampusInfectionP": 0,
+            "offCampusInfectionP": 0.125,
             "SeedState" : "exposed",
             "Contribution" : {
                 "infected Asymptomatic":0.5,
@@ -43,11 +43,11 @@ modelConfig = {
                 "susceptible" : -1, # never, unless acted on
                 "exposed" : 3*24, # 3 days
                 "infected Asymptomatic" : 3*24, # 2 days
-                "infected Asymptomatic Fixed" : 14*24, # 10 days
-                "infected Symptomatic Mild" : 11*24,# 10 Days
-                "infected Symptomatic Severe" : 11*24, # 10 days
+                "infected Asymptomatic Fixed" : 14*24, # 14 days
+                "infected Symptomatic Mild" : 11*24,# 11 Days
+                "infected Symptomatic Severe" : 11*24, # 11 days
                 "recovered" : -1, # never
-                "quarantined" : 16*24, # 2 weeks
+                "quarantined" : 14*24, # 14 days
             },
             # INFECTION TRANSITION PROBABILITY
             "TransitionProbability" : {
@@ -67,7 +67,7 @@ modelConfig = {
             # we can allocate the required space beforehand to speedup data storing
             "InferedSimulatedDays":100,
             # put the name(s) of intervention(s) to be turned on
-            "TurnedOnInterventions":[],# ["HybridClasses", "ClosingBuildings", "Quarantine", "Screening", "FaceMasks"],
+            "TurnedOnInterventions":["Quarantine"],# ["HybridClasses", "ClosingBuildings", "Quarantine", "Screening", "FaceMasks"],
 
             "transitName": "transit_space_hub",
             "offCampusStudentCount":2500,
@@ -78,7 +78,6 @@ modelConfig = {
             "LazySunday": True,
             "LargeGathering": True,
             "DynamicCapacity": False,
-            "TurnedOnInterventions":["Quarantine"]
         },
 
         # interventions
@@ -98,7 +97,7 @@ modelConfig = {
 
             # for random sampling from the agent population
             "SamplingProbability" : 0,
-            "ResultLatency":1*24,
+            "ResultLatency":2*24,
             "WalkIn":True,
             "walkinProbability" : {
                 "infected Symptomatic Mild": 0.7,
@@ -125,15 +124,15 @@ modelConfig = {
 
         },
         "HybridClass":{
-            "RemoteStudentCount": 500,
-            "RemoteFacultyCount": 180,
+            "RemoteStudentCount": 900,
+            "RemoteFacultyCount": 200,
             "RemovedDoubleCount": 0,
-            "OffCampusCount": 500,
+            "OffCampusCount": 300,
             "TurnOffLargeGathering": True,
-            "ChangedSeedNumber": 15,
+            "ChangedSeedNumber": 12,
         },
         "LessSocializing":{
-            "StayingHome":0.5
+            "StayingHome":0.75
         },
         "Exposure":{
             "CollectData":False,

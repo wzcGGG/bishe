@@ -96,7 +96,7 @@ def timeSeriesGraph(timeIntervals, xLim, yLim, data,
         showAnimation(timeIntervals, animateData, xLim, yLim, len(timeIntervals))
 
 def filledTimeSeriesGraph(timeIntervals, xLim, yLim, data, linestyle= ["r-", "b.", "g--"],
-                    savePlt=False, saveName="defaultImage.png"):
+                    savePlt=False, saveName="defaultImage.png") -> object:
     print(timeIntervals)
 
     fig, ax= plt.subplots(figsize = (10, 5))
@@ -142,9 +142,11 @@ def filledTimeSeriesGraph(timeIntervals, xLim, yLim, data, linestyle= ["r-", "b.
             #moreStd = [m+(2*std) for m, std in zip(mean, stds)]
             ax.fill_between(timeIntervals, minVals, maxVals, alpha=0.4)
         ax.legend()
-        plt.xlabel("Time (Hours)")
+        plt.xlabel("Time (days)")
         plt.ylabel("# of Agents")
         plt.title("Agent's State over Time")
+        path = saveName
+        plt.savefig(path)
         plt.show()
 
 def get_cmap(n, name='hsv'):

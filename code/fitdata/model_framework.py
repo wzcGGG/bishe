@@ -150,7 +150,7 @@ def doubletime(simulationCount, modelConfig, days, debug, modelName, outputDir="
         infectionData.append(result["susceptible"])
     return infectionData
 
-def simpleCheck(modelConfig, days=100, visuals=True, debug=False, modelName="default", outputDir="outputs", returnTimeseries=True):
+def simpleCheck(modelConfig, days=100, visuals=True, debug=False, modelName="default", outputDir="outputs", returnTimeseries=False):
     """
         runs one simulatons with the given config and showcase the number of infection and the graph
     """
@@ -173,17 +173,16 @@ def simpleCheck(modelConfig, days=100, visuals=True, debug=False, modelName="def
         "infected Symptomatic Severe", "recovered", "quarantined"])
     model.printRelevantInfo()
     for _ in range(days):
-        if _== 14:
-            model.supersharp1()
-        if _== 35:
-            model.supersharp2()
-        if _== 80:
-            model.supersharp31()
-        if _== 81:
-            model.supersharp32()
-        if _== 82:
-            model.supersharp33()
-
+        # if _== 14:
+        #     model.supersharp1()
+        # if _== 35:
+        #     model.supersharp2()
+        # if _== 80:
+        #     model.supersharp31()
+        # if _== 81:
+        #     model.supersharp32()
+        # if _== 82:
+        #     model.supersharp33()
         model.updateSteps(24)
         if debug:
             model.printRelevantInfo()
@@ -220,7 +219,7 @@ def R0_simulation(modelConfig, R0Control, simulationN=100, debug=False, timeSeri
     model = createModel(configCopy, debug=debug, R0=True)
     if debug:
         max_limits = dict()
-    days=20
+    days = 5
     t1 = time.time()
     for i in range(simulationN):
         #print("*"*20, "starting model")
@@ -264,7 +263,7 @@ def R0_simulation(modelConfig, R0Control, simulationN=100, debug=False, timeSeri
             ylabel="Infected Agents (R0)", labels=[modelName], savePlt=True, saveName=modelName,  outputDir=outputDir)
     return (R0Values, ("(npMean, stdev, rangeVal, median)", data))
 
-def createFilledPlot(modelConfig, simulationN=10, days=100,
+def createFilledPlot(modelConfig, simulationN=10, days=50,
                                     modelName="default", debug=False, outputDir="outputs"):
     multiResult = []
     xlim = [0, 0]
@@ -292,9 +291,10 @@ def createFilledPlot(modelConfig, simulationN=10, days=100,
         saveName =  key+"_"+modelName
         dfObj = pd.DataFrame(np.array(dataMatrix), columns=timeSeries)
         flr.save_df_to_csv(flr.fullPath(saveName+".csv", outputDir), dfObj)
-
+    time = np.array(timeSeries) /24
+    x = np.array(xlim) / 24
     import visualize
-    visualize.filledTimeSeriesGraph(timeSeries, xlim, ylim, multiResult)
+    visualize.filledTimeSeriesGraph(time, x, ylim, multiResult,saveName = flr.fullPath(saveName+".png", outputDir))
 
 def createModel(modelConfig, debug=False, R0=False):
     """
@@ -1035,7 +1035,7 @@ class AgentBasedModel:
             self.quarantineGroupNumber, self.quarantineGroupIndex = len(self.groupIds), 0
 
         else: # the population is split in smaller groups and after every interval we cycle through the groups in order and screen each member in the group
-            totalIds = set([agentId for agentId, agent in self.agents.items() if agent.archetype == "student"])
+            totalIds = set([agentId for agentId, agent in self.agents.items()])
             size = len(self.agents)
             # the size of the group, if there's a remainder, then they all get grouped together
 
@@ -1551,11 +1551,7 @@ class AgentBasedModel:
         counter = 0
         #timeRem = self.time//self.timeIncrement
         for key, value in self.parameters.items():
-            if key == "falsePositive":
-                #counter -= value[timeRem]
-                counter-=value[-1]
-            elif key != "susceptible":
-                #counter += value[timeRem]
+            if key != "susceptible" and key != "falsePositive":
                 counter+=value[-1]
         self.printRelevantInfo()
         R0 = (counter - self.config["Infection"]["SeedNumber"])/self.config["Infection"]["SeedNumber"]

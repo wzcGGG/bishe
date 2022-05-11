@@ -466,15 +466,13 @@ diff_seed_number = {
 
 medium_student_vary_policy = {
     "SC_WP":{
-            # N = 150, L = 4, B = {G, L}, D = 0
-            # f = 0.5, c = 0.90, h = 0.75, s' = 0.25
             "World": [
                 ("TurnedOnInterventions", ["FaceMasks", "Quarantine", "ClosingBuildings", "LessSocial"]),
                 ("complianceRatio", 0.5), # f = 0.5
             ],
             "Quarantine": [
                 ("ResultLatency", 4*24), # L = 4
-                ("BatchSize", 150), # N=150
+                ("BatchSize", 1750), # N=150
                 ("ShowingUpForScreening", 0.9), # c = 0.9#############
             ],
             "ClosingBuildings": [
@@ -485,19 +483,17 @@ medium_student_vary_policy = {
             ("Exception_GoingHomeP", 0.75),
             ],
             "LessSocializing":[
-                ("StayingHome",0.25), # s' = 0.25 ######################
+                ("StayingHome",0.5), # s' = 0.25 ######################
             ],
         },
         "SC_MP":{
-            #N = 250, L = 3, B = {G, L, DH, LG}, D=650
-            # f = 0.5, c = 0.90, h = 0.75, s' = 0.25
             "World": [
                 ("TurnedOnInterventions", ["FaceMasks", "Quarantine", "ClosingBuildings", "LessSocial", "HybridClasses"]),
                 ("complianceRatio", 0.5), # f = 0.5
             ],
             "Quarantine": [
-                ("ResultLatency", 3*24), # L = 3
-                ("BatchSize", 250), # N=250
+                ("ResultLatency", 2*24), #
+                ("BatchSize", 3500), # N=250
                 ("ShowingUpForScreening", 0.9), # c = 0.9
             ],
             "ClosingBuildings": [
@@ -508,27 +504,25 @@ medium_student_vary_policy = {
                 ("Exception_GoingHomeP", 0.75),
             ],
             "LessSocializing":[
-                ("StayingHome",0.25), # s' = 0.25
+                ("StayingHome",0.5), # s' = 0.25
             ],
             "HybridClass":[
-                ("RemoteStudentCount", 250),
-                ("RemoteFacultyCount", 150),
-                ("RemovedDoubleCount", 325), # 525 - 250 = 275
-                ("OffCampusCount", 250),
+                ("RemoteStudentCount", 900),
+                ("RemoteFacultyCount", 400),
+                ("RemovedDoubleCount", 3*325), # 525 - 250 = 275
+                ("OffCampusCount", 600),
                 ("TurnOffLargeGathering", True),
-                ("ChangedSeedNumber", 7),
+                ("ChangedSeedNumber", 12),
             ],
         },
         "SC_SP":{
-            #N = 500, L = 2, B = {G, L, DH, LG, O}, D=1300
-            # f = 0.5, c = 0.90, h = 0.75, s' = 0.25
             "World": [
                 ("TurnedOnInterventions", ["FaceMasks", "Quarantine", "ClosingBuildings", "LessSocial", "HybridClasses"]),
                 ("complianceRatio", 0.5), # f = 0.5
             ],
             "Quarantine": [
-                ("ResultLatency", 2*24), # L = 2
-                ("BatchSize", 500), # N=500
+                ("ResultLatency", 1*24), # L = 2
+                ("BatchSize", 7000), # N=500
                 ("ShowingUpForScreening", 0.9), # c = 0.9
             ],
             "ClosingBuildings": [
@@ -539,15 +533,15 @@ medium_student_vary_policy = {
                 ("Exception_GoingHomeP", 0.75), # h = 0.5
             ],
             "LessSocializing":[
-                ("StayingHome",0.25), # s' = 0.25
+                ("StayingHome",0.5), # s' = 0.25
             ],
             "HybridClass":[
-                ("RemoteStudentCount", 500),
-                ("RemoteFacultyCount", 300),
-                ("RemovedDoubleCount", 525), #525 = total number of double
-                ("OffCampusCount", 500),
+                ("RemoteStudentCount", 1800),
+                ("RemoteFacultyCount", 400),
+                ("RemovedDoubleCount", 3*525), #525 = total number of double
+                ("OffCampusCount", 600),
                 ("TurnOffLargeGathering", True),
-                ("ChangedSeedNumber", 5),
+                ("ChangedSeedNumber", 9),
             ]
         },
 }
@@ -1083,12 +1077,12 @@ marginals = {
             ("TurnedOnInterventions", ["HybridClasses"]),
             ],
         "HybridClass":[
-            ("RemoteStudentCount", 500),
-            ("RemoteFacultyCount", 300),
-            ("RemovedDoubleCount", 525),
-            ("OffCampusCount", 500),
+            ("RemoteStudentCount", 1800),
+            ("RemoteFacultyCount", 400),
+            ("RemovedDoubleCount", 3*525),
+            ("OffCampusCount", 600),
             ("TurnOffLargeGathering", True),
-            ("ChangedSeedNumber", 5),
+            ("ChangedSeedNumber", 9),
         ],
     },
     "lessSocial":{
@@ -1102,8 +1096,8 @@ marginals = {
         ],
         "Quarantine": [
             ("ResultLatency", 2*24),
-            ("BatchSize", 500),
-            ("ShowingUpForScreening", 1),
+            ("BatchSize", 7000),
+            ("ShowingUpForScreening", 0.9),
         ],
     },
     "Medium+L4":{
@@ -1112,73 +1106,71 @@ marginals = {
         ],
         "Quarantine": [
             ("ResultLatency", 4*24), # L = 4
-            ("BatchSize", 250), # N=250
-            ("ShowingUpForScreening", 1), # c = 1
+            ("BatchSize", 3500), # N=250
+            ("ShowingUpForScreening", 0.9), # c = 1
         ],
         "HybridClass":[
-            ("RemoteStudentCount", 250),
-            ("RemoteFacultyCount", 150),
-            ("RemovedDoubleCount", 325), # 525 - 250 = 275
-            ("OffCampusCount", 250),
+            ("RemoteStudentCount", 900),
+            ("RemoteFacultyCount", 200),
+            ("RemovedDoubleCount", 3*325), # 525 - 250 = 275
+            ("OffCampusCount", 300),
             ("TurnOffLargeGathering", False),
-            ("ChangedSeedNumber", 7),
+            ("ChangedSeedNumber", 12),
         ],
+
     },
     "Medium+L3":{
         "World": [
             ("TurnedOnInterventions", ["Quarantine","HybridClasses"]),
         ],
-            "Quarantine": [
-            ("ResultLatency", 3*24), # L = 3
-            ("BatchSize", 250), # N=250
-            ("ShowingUpForScreening", 1), # c = 1
+        "Quarantine": [
+            ("ResultLatency", 3*24), # L = 4
+            ("BatchSize", 3500), # N=250
+            ("ShowingUpForScreening", 0.9), # c = 1
         ],
         "HybridClass":[
-            ("RemoteStudentCount", 250),
-            ("RemoteFacultyCount", 150),
-            ("RemovedDoubleCount", 325), # 525 - 250 = 275
-            ("OffCampusCount", 250),
+            ("RemoteStudentCount", 900),
+            ("RemoteFacultyCount", 200),
+            ("RemovedDoubleCount", 3*325), # 525 - 250 = 275
+            ("OffCampusCount", 300),
             ("TurnOffLargeGathering", False),
-            ("ChangedSeedNumber", 7),
+            ("ChangedSeedNumber", 12),
         ],
     },
     "Medium+L2":{
         "World": [
             ("TurnedOnInterventions", ["Quarantine","HybridClasses"]),
-
         ],
-            "Quarantine": [
-            ("ResultLatency", 2*24), # L = 2
-            ("BatchSize", 250), # N=250
-            ("ShowingUpForScreening", 1), # c = 1
+        "Quarantine": [
+            ("ResultLatency", 2*24), # L = 4
+            ("BatchSize", 3500), # N=250
+            ("ShowingUpForScreening", 0.9), # c = 1
         ],
         "HybridClass":[
-            ("RemoteStudentCount", 250),
-            ("RemoteFacultyCount", 150),
-            ("RemovedDoubleCount", 325), # 525 - 250 = 275
-            ("OffCampusCount", 250),
+            ("RemoteStudentCount", 900),
+            ("RemoteFacultyCount", 200),
+            ("RemovedDoubleCount", 3*325), # 525 - 250 = 275
+            ("OffCampusCount", 300),
             ("TurnOffLargeGathering", False),
-            ("ChangedSeedNumber", 7),
+            ("ChangedSeedNumber", 12),
         ],
     },
     "Medium+L1":{
         "World": [
             ("TurnedOnInterventions", ["Quarantine","HybridClasses"]),
-
-
         ],
-            "Quarantine": [
-            ("ResultLatency", 1*24), # L = 1
-            ("BatchSize", 250), # N=250
-            ("ShowingUpForScreening", 1), # c = 1
+        "Quarantine": [
+            ("ResultLatency", 1*24), # L = 4
+            ("BatchSize", 3500), # N=250
+            ("ShowingUpForScreening", 0.9), # c = 1
         ],
         "HybridClass":[
-            ("RemoteStudentCount", 250),
-            ("RemoteFacultyCount", 150),
-            ("RemovedDoubleCount", 325), # 525 - 250 = 275
-            ("OffCampusCount", 250),
+            ("RemoteStudentCount", 900),
+            ("RemoteFacultyCount", 200),
+            ("RemovedDoubleCount", 3*325), # 525 - 250 = 275
+            ("OffCampusCount", 300),
             ("TurnOffLargeGathering", False),
-            ("ChangedSeedNumber", 7),
+            ("ChangedSeedNumber", 12),
         ],
     },
     "building_closure_h_05":{
@@ -1209,7 +1201,7 @@ marginals = {
 }
 
 original_3x3 = {
-    "NC_WP":{
+    "L_L1":{
         # N = 150, L = 4, B = {G, L}, D = 0
         # f = 0, c = 0.80, h = 0.50, s' = 0
         "World": [
@@ -1218,21 +1210,20 @@ original_3x3 = {
         ],
         "Quarantine": [
             ("ResultLatency", 4*24), # L = 4
-            ("BatchSize", 150), # N=150
+            ("BatchSize", 1750), # N=1750
             ("ShowingUpForScreening", 0.8), # c = 0.8
         ],
         "ClosingBuildings": [
-        ("ClosedBuildingOpenHub", []),
         ("ClosedBuilding_ByType", ["gym", "library"]),
         ("GoingHomeP", 0.5), # h = 0.5
         ("Exception_SemiClosedBuilding", []),
         ("Exception_GoingHomeP", 0.5),
         ],
         "LessSocializing":[
-            ("StayingHome",0), # s'
+            ("StayingHome",0.25), # s'
         ],
     },
-    "NC_MP":{
+    "M_L1":{
         #N = 250, L = 3, B = {G, L, DH, LG}, D=650
         # f = 0, c = 0.80, h = 0.50, s' = 0
         "World": [
@@ -1241,8 +1232,8 @@ original_3x3 = {
             ("LargeGathering", False)
         ],
         "Quarantine": [
-            ("ResultLatency", 3*24), # L = 3
-            ("BatchSize", 250), # N=250
+            ("ResultLatency", 2*24), # L = 3
+            ("BatchSize", 3500), # N=250
             ("ShowingUpForScreening", 0.8), # c = 0.8
         ],
         "ClosingBuildings": [
@@ -1253,18 +1244,18 @@ original_3x3 = {
             ("Exception_GoingHomeP", 0.5),
         ],
         "LessSocializing":[
-            ("StayingHome",0), # s'
+            ("StayingHome",0.25), # s'
         ],
         "HybridClass":[############################################################
-            ("RemoteStudentCount", 250),
-            ("RemoteFacultyCount", 150),
-            ("RemovedDoubleCount", 325), # 525 doubles, extra agents = 200, means need 200 double beds available
-            ("OffCampusCount", 250),
+            ("RemoteStudentCount", 900),
+            ("RemoteFacultyCount", 200),
+            ("RemovedDoubleCount", 325*3), # 525 doubles, extra agents = 200, means need 200 double beds available
+            ("OffCampusCount", 300),
             ("TurnOffLargeGathering", True),
-            ("ChangedSeedNumber", 7),
+            ("ChangedSeedNumber", 12),
         ],
     },
-    "NC_SP":{
+    "H_L1":{
         #N = 500, L = 2, B = {G, L, DH, LG, O}, D=1300
         # f = 0, c = 0.80, h = 0.50, s' = 0
         "World": [
@@ -1273,8 +1264,8 @@ original_3x3 = {
             ("LargeGathering", False)
         ],
         "Quarantine": [
-            ("ResultLatency", 2*24), # L = 2
-            ("BatchSize", 500), # N=500
+            ("ResultLatency", 1*24), # L = 2
+            ("BatchSize", 7000), # N=500
             ("ShowingUpForScreening", 0.8), # c=0.8
         ],
         "ClosingBuildings": [
@@ -1288,16 +1279,16 @@ original_3x3 = {
             ("StayingHome",0), # s'
         ],
         "HybridClass":[
-            ("RemoteStudentCount", 500),
-            ("RemoteFacultyCount", 300),
-            ("RemovedDoubleCount", 525), #525 = total number of double
-            ("OffCampusCount", 500),
+            ("RemoteStudentCount", 1800),
+            ("RemoteFacultyCount", 400),
+            ("RemovedDoubleCount", 525*3), #525 = total number of double
+            ("OffCampusCount", 600),
             ("TurnOffLargeGathering", True),
-            ("ChangedSeedNumber", 5),
+            ("ChangedSeedNumber", 9),
         ],
     },
 
-    "SC_WP":{
+    "L_M2":{
         # N = 150, L = 4, B = {G, L}, D = 0
         # f = 0.5, c = 0.90, h = 0.75, s' = 0.25
         "World": [
@@ -1306,7 +1297,7 @@ original_3x3 = {
         ],
         "Quarantine": [
             ("ResultLatency", 4*24), # L = 4
-            ("BatchSize", 150), # N=150
+            ("BatchSize", 1750), # N=150
             ("ShowingUpForScreening", 0.9), # c = 0.9#############
         ],
         "ClosingBuildings": [
@@ -1317,10 +1308,10 @@ original_3x3 = {
         ("Exception_GoingHomeP", 0.75),
         ],
         "LessSocializing":[
-            ("StayingHome",0.25), # s' = 0.25 ######################
+            ("StayingHome",0.5),
         ],
     },
-    "SC_MP":{
+    "M_M2":{
         #N = 250, L = 3, B = {G, L, DH, LG}, D=650
         # f = 0.5, c = 0.90, h = 0.75, s' = 0.25
         "World": [
@@ -1328,8 +1319,8 @@ original_3x3 = {
             ("complianceRatio", 0.5), # f = 0.5
         ],
         "Quarantine": [
-            ("ResultLatency", 3*24), # L = 3
-            ("BatchSize", 250), # N=250
+            ("ResultLatency", 2*24), # L = 3
+            ("BatchSize", 3500), # N=250
             ("ShowingUpForScreening", 0.9), # c = 0.9
         ],
         "ClosingBuildings": [
@@ -1340,18 +1331,18 @@ original_3x3 = {
             ("Exception_GoingHomeP", 0.75),
         ],
         "LessSocializing":[
-            ("StayingHome",0.25), # s' = 0.25
+            ("StayingHome",0.5), # s' = 0.25
         ],
         "HybridClass":[
-            ("RemoteStudentCount", 250),
-            ("RemoteFacultyCount", 150),
-            ("RemovedDoubleCount", 325), # 525 - 250 = 275
-            ("OffCampusCount", 250),
+            ("RemoteStudentCount", 900),
+            ("RemoteFacultyCount", 200),
+            ("RemovedDoubleCount", 3*325), # 525 - 250 = 275
+            ("OffCampusCount", 300),
             ("TurnOffLargeGathering", True),
-            ("ChangedSeedNumber", 7),
+            ("ChangedSeedNumber", 12),
         ],
     },
-    "SC_SP":{
+    "H_M2":{
         #N = 500, L = 2, B = {G, L, DH, LG, O}, D=1300
         # f = 0.5, c = 0.90, h = 0.75, s' = 0.25
         "World": [
@@ -1359,8 +1350,8 @@ original_3x3 = {
             ("complianceRatio", 0.5), # f = 0.5
         ],
         "Quarantine": [
-            ("ResultLatency", 2*24), # L = 2
-            ("BatchSize", 500), # N=500
+            ("ResultLatency", 1*24), # L = 2
+            ("BatchSize", 7000), # N=500
             ("ShowingUpForScreening", 0.9), # c = 0.9
         ],
         "ClosingBuildings": [
@@ -1371,18 +1362,18 @@ original_3x3 = {
             ("Exception_GoingHomeP", 0.75), # h = 0.5
         ],
         "LessSocializing":[
-            ("StayingHome",0.25), # s' = 0.25
+            ("StayingHome",0.5), # s' = 0.25
         ],
         "HybridClass":[
-            ("RemoteStudentCount", 500),
-            ("RemoteFacultyCount", 300),
-            ("RemovedDoubleCount", 525), #525 = total number of double
-            ("OffCampusCount", 500),
+            ("RemoteStudentCount", 1800),
+            ("RemoteFacultyCount", 400),
+            ("RemovedDoubleCount", 3*525), #525 = total number of double
+            ("OffCampusCount", 600),
             ("TurnOffLargeGathering", True),
-            ("ChangedSeedNumber", 5),
+            ("ChangedSeedNumber", 9),
         ]
     },
-    "VC_WP":{
+    "L_H3":{
         # N = 150, L = 4, B = {G, L}, D = 0
         # f = 1, c = 1, h = 1, s' = 0.75, no large gatherings
         "World": [
@@ -1393,7 +1384,7 @@ original_3x3 = {
         "Quarantine": [
             ("ResultLatency", 4*24),
                 # L = 4
-            ("BatchSize", 150), # N=150
+            ("BatchSize", 1750), # N=150
             ("ShowingUpForScreening", 1), # c = 1
         ],
         "ClosingBuildings": [
@@ -1407,7 +1398,7 @@ original_3x3 = {
             ("StayingHome",0.75), # s'
         ],
     },
-    "VC_MP":{
+    "M_H3":{
         #N = 250, L = 3, B = {G, L, DH, LG}, D=650
         # f = 1, c = 1, h = 1, s' = 0.75, no large gatherings
         "World": [
@@ -1416,8 +1407,8 @@ original_3x3 = {
             ("LargeGathering", False)
         ],
         "Quarantine": [
-            ("ResultLatency", 3*24), # L = 3
-            ("BatchSize", 250), # N=250
+            ("ResultLatency", 2*24), # L = 3
+            ("BatchSize", 3500), # N=250
             ("ShowingUpForScreening", 1), # c = 1
         ],
         "ClosingBuildings": [
@@ -1431,15 +1422,15 @@ original_3x3 = {
             ("StayingHome",0.75), # s'
         ],
         "HybridClass":[
-            ("RemoteStudentCount", 250),
-            ("RemoteFacultyCount", 150),
-            ("RemovedDoubleCount", 325), # 525 - 250 = 275
-            ("OffCampusCount", 250),
+            ("RemoteStudentCount", 900),
+            ("RemoteFacultyCount", 200),
+            ("RemovedDoubleCount", 3*325), # 525 - 250 = 275
+            ("OffCampusCount", 300),
             ("TurnOffLargeGathering", True),
-            ("ChangedSeedNumber", 7),
+            ("ChangedSeedNumber", 12),
         ],
     },
-    "VC_SP":{
+    "H_H3":{
         #N = 500, L = 2, B = {G, L, DH, LG, O}, D=1300
         # f = 1, c = 1, h = 1, s' = 0.75, no large gatherings
         "World": [
@@ -1448,8 +1439,8 @@ original_3x3 = {
             ("LargeGathering", False)
         ],
         "Quarantine": [
-            ("ResultLatency", 2*24), # L = 2
-            ("BatchSize", 500), # N=500
+            ("ResultLatency", 1*24), # L = 2
+            ("BatchSize", 7000), # N=500
             ("ShowingUpForScreening", 1), # c = 1
         ],
         "ClosingBuildings": [
@@ -1463,12 +1454,12 @@ original_3x3 = {
             ("StayingHome",0.75), # s' = 0.75
         ],
         "HybridClass":[
-            ("RemoteStudentCount", 500),
-            ("RemoteFacultyCount", 300),
-            ("RemovedDoubleCount", 525), #525 = total number of double
-            ("OffCampusCount", 500),
+            ("RemoteStudentCount", 1800),
+            ("RemoteFacultyCount", 400),
+            ("RemovedDoubleCount", 3*525), #525 = total number of double
+            ("OffCampusCount", 600),
             ("TurnOffLargeGathering", True),
-            ("ChangedSeedNumber", 5),
+            ("ChangedSeedNumber", 9),
         ]
     },
 }

@@ -20,25 +20,13 @@ def main():
     modelConfig = main_config.modelConfig
 
 
-    R0_controls = {
-        "World" : [
-            ("DynamicCapacity", False),
-            ],
-        "Infection" : [
-            ("baseP" , 1.25),
-            ("SeedNumber", 100),
-        ],
-        "HybridClass":[
-            ("ChangedSeedNumber", 10),
-        ],
-    }
     # this overrides the previous experiments, since base_p is being chnaged
     R0_controls = {
         "World" : [
             ("DynamicCapacity", False),
             ],
         "HybridClass":[
-            ("ChangedSeedNumber", 10),
+            ("ChangedSeedNumber", 15),
         ],
     }
 
@@ -129,13 +117,13 @@ def main():
                         else:
                             configCopy[categoryKey][specificKey] = specificValue
 
-                R0Count, multiCounts = 100, 100
+                R0Count, multiCounts = 1, 1
                 if index in [0, 1] and False:
-                    R0Count = 200
+                    R0Count = 1
                 #print(configCopy1
                 if index > -1:
                     #model_framework.simpleCheck(configCopy, days=10, visuals=True, debug=True, modelName=modelName)
-                    InfectedCountDict[modelName] = model_framework.multiSimulation(multiCounts, configCopy, days=100, debug=False, modelName=modelName, outputDir=output_folder)
+                    # InfectedCountDict[modelName] = model_framework.multiSimulation(multiCounts, configCopy, days=5, debug=False, modelName=modelName, outputDir=output_folder)
                     R0Dict[modelName] = model_framework.R0_simulation(configCopy, R0_controls,R0Count, debug=False, timeSeriesVisual=False, R0Visuals=True, modelName=modelName, outputDir=output_folder)
 
                     # the value of the dictionary is ([multiple R0 values], (descriptors, (tuple of useful data like mean and stdev))
