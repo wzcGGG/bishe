@@ -23,15 +23,15 @@ def main():
     exposure_model = {
         "exposure": {
             "Exposure":[("CollectData", True),
-                        ("OnCampusData", 100),
-                        ("OffCampusData",100),
-                        ("facultyData",100)]
+                        ("OnCampusData", 350),
+                        ("OffCampusData",350),
+                        ("facultyData",350)]
             }
     }
     # index is the simulation number and each item will be a set of vector
     exposure_array = []
     simulation_count = 1 # num of simulations
-    simuated_time = 7 # a week
+    simuated_time = 14 # a week
 
     for index, (modelName, modelControl) in enumerate(exposure_model.items()):
         configCopy = copy.deepcopy(modelConfig)
@@ -70,11 +70,13 @@ def main():
         for arr in list_ver:
             x = sorted(arr)
             plt.bar(range(100), x[-100:])
+        plt.savefig('revision_exposure1')
         plt.show()
     def visual2():
         for arr in list_ver:
             x = sorted(arr)
             plt.bar(range(num_agents-1), x[0:-1], alpha=0.5)
+        plt.savefig('')
         plt.show()
 
     visual1()

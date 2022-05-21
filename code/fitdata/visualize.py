@@ -61,7 +61,7 @@ def makeGraph(vertices, edges, vertices2Cluster, cluster2Vertices,
         handleList.append(a)
 
     ec = nx.draw_networkx_edges(G, pos, alpha=0.2)
-    nc = nx.draw_networkx_nodes(G, pos, with_labels=True, node_size=sizeList,
+    nc = nx.draw_networkx_nodes(G, pos, node_size=sizeList,
                 node_color=np.array(colorList), alpha=0.7,  cmap="gist_rainbow")
     lc = nx.draw_networkx_labels(G, pos, labels=labelList, font_size= 10)
     if colorbar:

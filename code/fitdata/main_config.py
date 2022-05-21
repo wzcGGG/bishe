@@ -67,7 +67,7 @@ modelConfig = {
             # we can allocate the required space beforehand to speedup data storing
             "InferedSimulatedDays":100,
             # put the name(s) of intervention(s) to be turned on
-            "TurnedOnInterventions":["Quarantine"],# ["HybridClasses", "ClosingBuildings", "Quarantine", "Screening", "FaceMasks"],
+            "TurnedOnInterventions":[],# ["HybridClasses", "ClosingBuildings", "Quarantine", "Screening", "FaceMasks"],
 
             "transitName": "transit_space_hub",
             "offCampusStudentCount":2500,

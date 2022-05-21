@@ -1202,6 +1202,7 @@ marginals = {
 
 original_3x3 = {
     "L_L1":{
+        # 政策
         # N = 150, L = 4, B = {G, L}, D = 0
         # f = 0, c = 0.80, h = 0.50, s' = 0
         "World": [

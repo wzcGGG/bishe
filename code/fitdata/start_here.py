@@ -123,7 +123,7 @@ def main():
                 #print(configCopy1
                 if index > -1:
                     #model_framework.simpleCheck(configCopy, days=10, visuals=True, debug=True, modelName=modelName)
-                    # InfectedCountDict[modelName] = model_framework.multiSimulation(multiCounts, configCopy, days=5, debug=False, modelName=modelName, outputDir=output_folder)
+                    InfectedCountDict[modelName] = model_framework.multiSimulation(multiCounts, configCopy, days=5, debug=False, modelName=modelName, outputDir=output_folder)
                     R0Dict[modelName] = model_framework.R0_simulation(configCopy, R0_controls,R0Count, debug=False, timeSeriesVisual=False, R0Visuals=True, modelName=modelName, outputDir=output_folder)
 
                     # the value of the dictionary is ([multiple R0 values], (descriptors, (tuple of useful data like mean and stdev))

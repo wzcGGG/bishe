@@ -1,0 +1,16 @@
+,onA,onB,onW,offA,offB,offW,facultyA,facultyB,facultyW
+8,dorm,dorm,dining,Off,Off,Off,Off,Off,Off
+9,dorm,dorm,dorm,dining,Off,Off,office,office,Off
+10,dorm,dining,dorm,"(193, 30, 'Hum')","(77, 14, 'STEM')",Off,office,office,Off
+11,dining,dorm,dorm,"(193, 30, 'Hum')","(77, 14, 'STEM')",Off,office,office,Off
+12,dorm,dining,dining,Off,Off,Off,116,office,Off
+13,dining,library,dorm,library,Off,Off,116,office,Off
+14,"(122, 18, 'STEM')","(120, 18, 'STEM')",dorm,"(125, 19, 'STEM')",Off,Off,office,79,Off
+15,"(122, 18, 'STEM')","(120, 18, 'STEM')",gym,"(125, 19, 'STEM')",dining,Off,dining,79,Off
+16,"(48, 12, 'STEM')","(6, 2, 'STEM')",dorm,"(13, 4, 'STEM')",Off,Off,office,office,Off
+17,"(48, 12, 'STEM')","(6, 2, 'STEM')",dining,"(13, 4, 'STEM')",Off,Off,office,office,Off
+18,dorm,dining,dorm,Off,Off,Off,Off,Off,Off
+19,dorm,dorm,dorm,Off,Off,Off,Off,Off,Off
+20,dining,gym,dorm,Off,Off,Off,Off,Off,Off
+21,dorm,dorm,library,Off,Off,Off,Off,Off,Off
+22,dorm,dorm,dorm,Off,Off,Off,Off,Off,Off

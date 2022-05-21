@@ -171,32 +171,32 @@ def simpleCheck(modelConfig, days=100, visuals=True, debug=False, modelName="def
         ["susceptible","exposed", "infected Asymptomatic",
         "infected Asymptomatic Fixed" ,"infected Symptomatic Mild",
         "infected Symptomatic Severe", "recovered", "quarantined"])
-    model.printRelevantInfo()
-    for _ in range(days):
-        # if _== 14:
-        #     model.supersharp1()
-        # if _== 35:
-        #     model.supersharp2()
-        # if _== 80:
-        #     model.supersharp31()
-        # if _== 81:
-        #     model.supersharp32()
-        # if _== 82:
-        #     model.supersharp33()
-        model.updateSteps(24)
-        if debug:
-            model.printRelevantInfo()
-    model.final_check()
-    model.printRoomLog()
+    # model.printRelevantInfo()
+    # for _ in range(days):
+    #     # if _== 14:
+    #     #     model.supersharp1()
+    #     # if _== 35:
+    #     #     model.supersharp2()
+    #     # if _== 80:
+    #     #     model.supersharp31()
+    #     # if _== 81:
+    #     #     model.supersharp32()
+    #     # if _== 82:
+    #     #     model.supersharp33()
+    #     model.updateSteps(24)
+    #     if debug:
+    #         model.printRelevantInfo()
+    # model.final_check()
+    # model.printRoomLog()
     #tup = model.findDoubleTime()
     #for description, tupVal in zip(("doublingTime", "doublingInterval", "doublingValue"), tup):
     #    print(description, tupVal)
-    if visuals:
-        fileformat = ".png"
-        model.visualOverTime(False, True, flr.fullPath(modelName+fileformat, outputDir))
-        modelName+="_total"
-        model.visualOverTime(True, True, flr.fullPath(modelName+fileformat, outputDir))
-    #model.visualizeBuildings()
+    # if visuals:
+    #     fileformat = ".png"
+    #     model.visualOverTime(False, True, flr.fullPath(modelName+fileformat, outputDir))
+    #     modelName+="_total"
+    #     model.visualOverTime(True, True, flr.fullPath(modelName+fileformat, outputDir))
+    model.visualizeBuildings()
     # return (newdata, otherData, data, totalExposed)
     if returnTimeseries:
         return model.returnStoredInfo()
@@ -2032,7 +2032,18 @@ class AgentBasedModel:
 
     def agentData(self):
         #first #x is for oncampus and the rest are offcampus
-        return [self.agents[agentId].contacts for agentId in self.monitoredAgentId]
+        contact = dict()
+        contact['onCampus'] = []
+        contact['offCampus'] = []
+        contact['faculty'] = []
+        for agentId in self.monitoredAgentId:
+            if self.agents[agentId].Agent_type == 'onCampus':
+                contact['onCampus'].append(self.agents[agentId].contacts)
+            if self.agents[agentId].Agent_type == 'offCampus':
+                contact['offCampus'].append(self.agents[agentId].contacts)
+            if self.agents[agentId].Agent_type == 'faculty':
+                contact['faculty'].append(self.agents[agentId].contacts)
+        return contact
 
     def findDoubleTime(self):
         """

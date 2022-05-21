@@ -193,7 +193,8 @@ def scheduleCreator():
     return (schedule, randomizedAgents)
 
 def main():
-   scheduleCreator()
+   schedule = scheduleCreator()
+   print(schedule)
 
 if __name__ == "__main__":
     main()

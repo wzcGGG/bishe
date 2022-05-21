@@ -1,259 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d900f482-6373-460c-b43b-d33fa898842c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bishe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bishe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/configuration/newAgent.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/configuration/newBuilding.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/doublingtime.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/experiment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/fileRelated.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/main_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/model_framework.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/modifyDf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/new_percent_graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_30_55.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_30_55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_30_55_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_40_65.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_40_65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_40_65_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_50_75.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_50_75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_50_75_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_60_85.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_60_85.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_60_85_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_70_95.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_70_95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/outputs/request_6_facemask_param/FM_70_95_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/revision_exposure.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/schedule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/schedule_faculty.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/schedule_students.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/start_here.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/statfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/student_schedule_kukai.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/corona_model/visualize.py" beforeDir="false" />
+    <list default="true" id="d900f482-6373-460c-b43b-d33fa898842c" name="Changes" comment="finish &#10;1.epidemic prevention policy compare&#10;2.plot base model">
+      <change afterPath="$PROJECT_DIR$/code/fitdata/configuration/Building.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/fitdata/madenetwork.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/fitdata/debug_sava_compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/debug_sava_compare.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/fitdata/experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/good.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/debug_sava_compare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/baba0resultREAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/baba15resultREAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/baba1resultREAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/baba2resultREAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/baba6resultREAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/baba71resultREAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/jiu0resultREAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/jiu11resultREAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/jiu1resultREAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/img/jiu5resultREAL.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/code/fitdata/main_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/main_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/fitdata/model_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/model_framework.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/.ipynb_checkpoints/Quarantine-checkpoint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/.ipynb_checkpoints/baseModel-checkpoint.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/.ipynb_checkpoints/baseModel-checkpoint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/.ipynb_checkpoints/baseModel_infCount-checkpoint.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/.ipynb_checkpoints/building_closure_h_05_infCount-checkpoint.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/.ipynb_checkpoints/lessSocial-checkpoint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L1_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L2_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L3_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Medium+L4_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Quarantine.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Quarantine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/Quarantine_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/baseModel.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/baseModel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/baseModel_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/building_closure_h_05.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/building_closure_h_05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/building_closure_h_05_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/building_closure_h_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/building_closure_h_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/building_closure_h_1_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/facemasks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/facemasks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/facemasks_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/highDeden.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/highDeden.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/highDeden_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/lessSocial.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/lessSocial.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_1_marginal/lessSocial_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/.ipynb_checkpoints/NC_WP-checkpoint.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/.ipynb_checkpoints/NC_WP-checkpoint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/.ipynb_checkpoints/NC_WP_infCount-checkpoint.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/NC_MP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/NC_MP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/NC_MP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/NC_SP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/NC_SP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/NC_SP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/NC_WP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/NC_WP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/NC_WP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/SC_MP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/SC_MP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/SC_MP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/SC_SP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/SC_SP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/SC_SP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/SC_WP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/SC_WP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/SC_WP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/VC_MP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/VC_MP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/VC_MP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/VC_SP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/VC_SP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/VC_SP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/VC_WP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/VC_WP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_2_3x3/VC_WP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/.ipynb_checkpoints/SC_MP_p0.50-checkpoint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/.ipynb_checkpoints/SC_WP_p0.50-checkpoint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/.ipynb_checkpoints/SC_WP_p0.75-checkpoint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/.ipynb_checkpoints/SC_WP_p1.50-checkpoint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p0.50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p0.50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p0.50_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p0.75.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p0.75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p0.75_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p1.00.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p1.00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p1.00_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p1.25.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p1.25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p1.25_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p1.50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p1.50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_MP_p1.50_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p0.50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p0.50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p0.50_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p0.75.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p0.75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p0.75_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p1.00.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p1.00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p1.00_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p1.25.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p1.25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p1.25_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p1.50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p1.50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_SP_p1.50_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p0.50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p0.50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p0.50_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p0.75.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p0.75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p0.75_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p1.00.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p1.00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p1.00_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p1.25.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p1.25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p1.25_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p1.50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p1.50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_3_diff_base_p/SC_WP_p1.50_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_1x_SC_MP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_1x_SC_MP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_1x_SC_MP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_1x_SC_SP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_1x_SC_SP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_1x_SC_SP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_1x_SC_WP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_1x_SC_WP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_1x_SC_WP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_2x_SC_MP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_2x_SC_MP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_2x_SC_MP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_2x_SC_SP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_2x_SC_SP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_2x_SC_SP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_2x_SC_WP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_2x_SC_WP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_2x_SC_WP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_4x_SC_MP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_4x_SC_MP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_4x_SC_MP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_4x_SC_SP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_4x_SC_SP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_4x_SC_SP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_4x_SC_WP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_4x_SC_WP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_4x_SC_WP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_8x_SC_MP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_8x_SC_MP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_8x_SC_MP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_8x_SC_SP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_8x_SC_SP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_8x_SC_SP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_8x_SC_WP.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_8x_SC_WP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_4_fixed_p_diff_offcampusP/OCM_8x_SC_WP_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/.ipynb_checkpoints/p125_10-checkpoint.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/.ipynb_checkpoints/p125_10_infCount-checkpoint.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_100_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_10_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_20_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_30_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_40_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_50.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_50_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_60.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_60_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_70.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_70_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_80_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_90.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_5_diff_seed_number/p125_90_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_30_55.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_30_55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_30_55_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_40_65.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_40_65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_40_65_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_50_75.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_50_75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_50_75_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_60_85.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_60_85.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_60_85_infCount.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_70_95.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_70_95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/outputs/request_6_facemask_param/FM_70_95_infCount.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/fitdata/revision_exposure.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/revision_exposure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/fitdata/schedule_faculty.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/schedule_faculty.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/fitdata/start_here.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/start_here.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/statfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/statfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/fitdata/tu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/tu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/fitdata/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/visualize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finish/论文.md" beforeDir="false" afterPath="$PROJECT_DIR$/finish/论文.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/论文/参数.docx" beforeDir="false" afterPath="$PROJECT_DIR$/论文/参数.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/论文/绪论.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/题纲.md" beforeDir="false" afterPath="$PROJECT_DIR$/题纲.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,6 +34,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="28jplvgGNpX0gCN5eS19S4SJXoq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -280,14 +52,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/fitdata/configuration" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\github\bishe\code\fitdata\configuration" />
       <recent name="D:\code\github\bishe\code\corona_model\configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.debug_sava_compare">
+  <component name="RunManager" selected="Python.madenetwork">
     <configuration name="debug_sava_compare" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bishe" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -310,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="start_here (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="madenetwork" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bishe" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -323,7 +96,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/fitdata/start_here.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/fitdata/madenetwork.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -332,29 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="start_here" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="bishe" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/corona_model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/corona_model/start_here.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="schedule_faculty" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bishe" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -367,7 +118,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/fitdata/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/fitdata/schedule_faculty.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="schedule_students" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bishe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/fitdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/fitdata/schedule_students.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bishe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/fitdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/fitdata/tu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -378,10 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.madenetwork" />
+        <item itemvalue="Python.tu" />
+        <item itemvalue="Python.schedule_faculty" />
+        <item itemvalue="Python.schedule_students" />
         <item itemvalue="Python.debug_sava_compare" />
-        <item itemvalue="Python.start_here (1)" />
-        <item itemvalue="Python.start_here" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -402,8 +198,31 @@
       <workItem from="1652077487394" duration="12229000" />
       <workItem from="1652151692106" duration="3904000" />
       <workItem from="1652188759634" duration="1466000" />
-      <workItem from="1652241405549" duration="1845000" />
+      <workItem from="1652241405549" duration="14544000" />
+      <workItem from="1652343663752" duration="31000" />
+      <workItem from="1652516684363" duration="10113000" />
+      <workItem from="1652595653001" duration="4774000" />
+      <workItem from="1652686278092" duration="957000" />
+      <workItem from="1652779989429" duration="2522000" />
+      <workItem from="1652838736694" duration="2461000" />
+      <workItem from="1652862022579" duration="1186000" />
+      <workItem from="1652951257931" duration="704000" />
     </task>
+    <task id="LOCAL-00001" summary="finish &#10;1.epidemic prevention policy compare&#10;2.plot base model">
+      <created>1652253609816</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652253609816</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finish &#10;1.epidemic prevention policy compare&#10;2.plot base model">
+      <created>1652254229757</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652254229757</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,21 +240,61 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish &#10;1.epidemic prevention policy compare&#10;2.plot base model" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish &#10;1.epidemic prevention policy compare&#10;2.plot base model" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/fitdata/model_framework.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/fitdata/debug_sava_compare.py</url>
           <line>5</line>
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/fitdata/model_framework.py</url>
+          <line>198</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/fitdata/model_framework.py</url>
+          <line>1962</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/fitdata/madenetwork.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/fitdata/schedule_students.py</url>
+          <line>570</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/fitdata/schedule_faculty.py</url>
+          <line>196</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bishe$debug_sava_compare.coverage" NAME="debug_sava_compare Coverage Results" MODIFIED="1652242382369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
+    <SUITE FILE_PATH="coverage/bishe$debug_sava_compare.coverage" NAME="debug_sava_compare Coverage Results" MODIFIED="1652524196220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
     <SUITE FILE_PATH="coverage/bishe$test.coverage" NAME="test Coverage Results" MODIFIED="1651740102931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
+    <SUITE FILE_PATH="coverage/bishe$madenetwork.coverage" NAME="madenetwork Coverage Results" MODIFIED="1652951292286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
+    <SUITE FILE_PATH="coverage/bishe$schedule_faculty.coverage" NAME="schedule_faculty Coverage Results" MODIFIED="1652867872376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
+    <SUITE FILE_PATH="coverage/bishe$revision_exposure.coverage" NAME="revision_exposure Coverage Results" MODIFIED="1652269095864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
+    <SUITE FILE_PATH="coverage/bishe$new_percent_graph.coverage" NAME="new_percent_graph Coverage Results" MODIFIED="1652517744891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
+    <SUITE FILE_PATH="coverage/bishe$schedule_students.coverage" NAME="schedule_students Coverage Results" MODIFIED="1652606649637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
     <SUITE FILE_PATH="coverage/bishe$start_here.coverage" NAME="start_here Coverage Results" MODIFIED="1651740568026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/corona_model" />
     <SUITE FILE_PATH="coverage/bishe$start_here__1_.coverage" NAME="start_here (1) Coverage Results" MODIFIED="1652087368276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
+    <SUITE FILE_PATH="coverage/bishe$tu.coverage" NAME="tu Coverage Results" MODIFIED="1652868001675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/fitdata" />
   </component>
 </project>

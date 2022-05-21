@@ -1,0 +1,10 @@
+building_name,room_name,building_type,building_size,count,leaf_S,leaf_M,leaf_L,cap_S,cap_M,cap_L,enroll_S,enroll_M,enroll_L,connected_to,Kv,hubKv,hubCapacity
+dorm,dorm_room,dorm,small,6,5,0,0,0,0,0,0,0,0,transit_space_hub,3,2,50
+academic,class,classroom,small,6,5,0,0,0,0,0,0,0,0,transit_space_hub,2,1,50
+dining,dining_hall_room,dining,large,1,5,0,0,0,0,0,0,0,0,transit_space_hub,2,1,50
+library,library_leaf,library,large,1,5,0,0,0,0,0,0,0,0,transit_space_hub,2,1,50
+gym,gym_leaf,gym,large,1,5,0,0,0,0,0,0,0,0,transit_space_hub,3,1,50
+social,socialLeaf,social,medium,1,5,0,0,0,0,0,0,0,0,transit_space_hub,3,0,50
+transit space,transit_space,transit,large,1,0,0,0,0,0,0,0,0,0,transit_space_hub,1,1,50
+offCampus,offCampus_leaf,offCampus,large,1,5,0,0,0,0,0,0,0,0,transit_space_hub,1,1,50
+office,STEM_office_leaf,office,large,3,5,0,0,0,0,0,0,0,0,transit_space_hub,2,1,50

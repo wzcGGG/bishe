@@ -1,0 +1,25 @@
+,A,B,W
+0,sleep,sleep,sleep
+1,sleep,sleep,sleep
+2,sleep,sleep,sleep
+3,sleep,sleep,sleep
+4,sleep,sleep,sleep
+5,sleep,sleep,sleep
+6,sleep,sleep,sleep
+7,sleep,sleep,sleep
+8,dorm,dorm,dining
+9,dorm,dorm,dorm
+10,dorm,dining,dorm
+11,dining,dorm,dorm
+12,dorm,dining,dining
+13,dining,library,dorm
+14,"(122, 18, 'STEM')","(120, 18, 'STEM')",dorm
+15,"(122, 18, 'STEM')","(120, 18, 'STEM')",gym
+16,"(48, 12, 'STEM')","(6, 2, 'STEM')",dorm
+17,"(48, 12, 'STEM')","(6, 2, 'STEM')",dining
+18,dorm,dining,dorm
+19,dorm,dorm,dorm
+20,dining,gym,dorm
+21,dorm,dorm,library
+22,sleep,sleep,sleep
+23,sleep,sleep,sleep
