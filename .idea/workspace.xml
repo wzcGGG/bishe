@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d900f482-6373-460c-b43b-d33fa898842c" name="Changes" comment="finish &#10;1.epidemic prevention policy compare&#10;2.plot base model">
-      <change afterPath="$PROJECT_DIR$/code/fitdata/configuration/Building.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/fitdata/madenetwork.py" afterDir="false" />
+    <list default="true" id="d900f482-6373-460c-b43b-d33fa898842c" name="Changes" comment="完成结果可视化和论文撰写">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/debug_sava_compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/debug_sava_compare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/main_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/main_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/model_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/model_framework.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/revision_exposure.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/revision_exposure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/schedule_faculty.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/schedule_faculty.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/start_here.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/start_here.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/tu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/tu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/fitdata/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/fitdata/visualize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finish/论文.md" beforeDir="false" afterPath="$PROJECT_DIR$/finish/论文.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/论文/参数.docx" beforeDir="false" afterPath="$PROJECT_DIR$/论文/参数.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/论文/绪论.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/题纲.md" beforeDir="false" afterPath="$PROJECT_DIR$/题纲.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +192,7 @@
       <workItem from="1652838736694" duration="2461000" />
       <workItem from="1652862022579" duration="1186000" />
       <workItem from="1652951257931" duration="704000" />
+      <workItem from="1653103816533" duration="370000" />
     </task>
     <task id="LOCAL-00001" summary="finish &#10;1.epidemic prevention policy compare&#10;2.plot base model">
       <created>1652253609816</created>
@@ -222,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652254229757</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成结果可视化和论文撰写">
+      <created>1653104017062</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653104017062</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +235,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish &#10;1.epidemic prevention policy compare&#10;2.plot base model" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish &#10;1.epidemic prevention policy compare&#10;2.plot base model" />
+    <MESSAGE value="完成结果可视化和论文撰写" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成结果可视化和论文撰写" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
